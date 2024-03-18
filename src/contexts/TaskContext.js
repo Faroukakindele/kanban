@@ -218,17 +218,9 @@ function TaskProvider({ children }) {
 
   useEffect(
     function () {
-      async function getBoards(id) {
-        try {
-          const activeData = await data.boards.find((data) => data.id === id);
-          if (activeData) dispatch({ type: "setTask", payload: activeData });
-        } catch (e) {
-          console.log(e);
-        }
-      }
       getBoards(data.currentID);
     },
-    [data]
+    [data.currentID]
   );
 
   useEffect(
