@@ -218,9 +218,17 @@ function TaskProvider({ children }) {
 
   useEffect(
     function () {
-      getBoards(data.currentID);
+      async function getBoards(id) {
+        try {
+          const activeData = await data.boards.find((data) => data.id === id);
+          if (activeData) dispatch({ type: "setTask", payload: activeData });
+        } catch (e) {
+          console.log(e);
+        }
+      }
+      getBoards(data.currentID)
     },
-    [data.currentID]
+    [data.currentID, data.boards]
   );
 
   useEffect(
@@ -230,21 +238,14 @@ function TaskProvider({ children }) {
     [data]
   );
   // Fetching data on Click
-  async function getBoards(id) {
-    try {
-      const activeData = await data.boards.find((data) => data.id === id);
-      if (activeData) dispatch({ type: "setTask", payload: activeData });
-    } catch (e) {
-      console.log(e);
-    }
-  }
+  
   // Posting Data
   function postData(board) {
     dispatch({ type: "boardPosted", payload: board });
   }
 
   return (
-    <TaskContext.Provider value={{ data, dispatch, getBoards, postData }}>
+    <TaskContext.Provider value={{ data, dispatch,  postData }}>
       {children}
     </TaskContext.Provider>
   );
