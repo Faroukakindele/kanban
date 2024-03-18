@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.container h2{
+    color: var(--color-grey-dark);
+}
+.columnsItems:first-of-type{
+    margin: 0 !important;
+}
+.columnsItems{
+    display: flex;
+    gap: 1rem;
+    margin: .5rem 0;
+    align-items: center;
+    color: var(--color-dark-gray);
+}
+
+.container input {
+    flex: 1;
+ ;
+    
+    outline: none;
+    padding: .8rem 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--color-dark-gray);
+}
+.columnsItems span{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.columnsItems input::placeholder {
+    color: var(--color-grey-dark);
+    font-weight: 600;
+}
+.container button {
+    margin: 1rem 0;
+}
+
+.input{display: flex;
+flex-direction: column;
+margin: 1rem 0;
+}
+.container label {
+    font-size: 1.2rem;
+    color: var(--color-dark-gray);
+    margin: .2rem 0;
+    font-weight: 500;
+}
+.columnsItems input {
+    font-weight: 600;
+}
+.container p {
+    text-align: start;
+    font-size: 1.2rem ;
+    padding: .4rem .7rem;
+    font-weight: 600;
+    color: var(--color-dark-gray);
+}
+.showErrorContainer , .columnErrorContainer{
+    flex-direction: row ;
+    display: flex;
+    flex-wrap: nowrap ;
+    justify-content: space-between;
+}
+.showError ,.columnError{
+    color: var(--color-red) !important;
+}
+
+.showErrorContainer ~ input , .columnErrorContainer ~ input{
+    border-color: var(--color-red) !important;
+}
+.container div:has(label){
+    padding-bottom: 1rem ;
+}

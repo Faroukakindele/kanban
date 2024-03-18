@@ -1,0 +1,35 @@
+.container {
+  margin: 1rem 3rem;
+  padding: 1rem 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+  justify-content: center;
+  background-color: var(--color-white-dark);
+  margin-top: auto;
+  cursor: pointer;
+}
+.toggle {
+  width: 4rem;
+  height: 1.8rem;
+  border-radius: 50rem;
+  padding: 4px;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+}
+.dark {
+  justify-content: end;
+}
+.light {
+  justify-content: flex-start;
+}
+.toggle div {
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  border: none;
+}

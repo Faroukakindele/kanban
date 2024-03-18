@@ -1,0 +1,28 @@
+.container {
+    padding: 1rem 3rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.1rem;
+gap: 10px;
+
+letter-spacing: 1.5px;
+color: var(--color-dark-gray)
+;
+cursor: pointer;
+transition: all .5s ease-in-out;
+}
+.container svg{
+    fill: var(--color-dark-gray);
+    
+}
+.container:hover svg , .container:hover {
+    fill: var(--color-primary) !important;
+    color: var(--color-primary) ;
+}
+.container:hover{
+    border-top-right-radius: 50rem;
+    border-bottom-right-radius: 50rem;
+    background-color:#f4f7fd;
+}

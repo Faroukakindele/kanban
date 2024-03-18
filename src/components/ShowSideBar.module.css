@@ -1,0 +1,12 @@
+.container {
+    height: 5rem;
+    width: 7rem;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 50rem;
+    border-bottom-right-radius: 50rem;
+    position: absolute;
+    bottom: 5%;
+}

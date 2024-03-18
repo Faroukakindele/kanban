@@ -1,0 +1,14 @@
+.btn {
+    padding: 1.5rem 3rem;
+    background-color: var(--color-primary);
+    border-radius: 50rem;
+    display: inline;
+    border: none;
+    color:white ;
+    font-size: 1.4rem;
+    transition: all .5s;
+}
+.btn:hover{
+    opacity: .7 !important;
+
+}

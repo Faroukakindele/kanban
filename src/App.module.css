@@ -1,0 +1,7 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  grid-template-rows: .7fr 9fr;
+  height: calc(100vh);
+  position: relative;
+}

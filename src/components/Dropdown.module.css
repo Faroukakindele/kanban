@@ -1,0 +1,26 @@
+.container {
+    cursor: pointer;
+    
+}
+.dropdown{
+    list-style: none;
+    position: absolute;
+    padding:.5rem;
+   background-color: var(--color-white) ;
+   border-radius: 7px;
+   border: 1px solid var(--color-white-dark);
+   width : 18rem;
+   padding: 1rem ;
+   cursor: pointer;
+   font-size: 1.3rem;
+   z-index: 1000000;
+}
+.dropdown li{
+    padding: .5rem;
+}
+.dropdown li:first-child{
+    color:var(--color-dark-gray) ;
+}
+.dropdown li:last-child{
+    color :var(--color-red);
+}

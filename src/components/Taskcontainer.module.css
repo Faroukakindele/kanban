@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  margin: 0.5rem;
+  flex-direction: column;
+  margin-left: 2rem;
+  flex: 0 0 25rem;
+}
+.container:first-child {
+  margin-left: 5rem;
+}
+.status {
+  text-transform: uppercase;
+  color: var(--color-dark-gray);
+  letter-spacing: 4px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.status div {
+  height: 1.3rem;
+
+  width: 1.4rem;
+  border-radius: 50%;
+}
+.Todo {
+  background-color: rgb(127, 227, 255);
+}
+.Doing {
+  background-color: var(--color-primary);
+}
+.Done {
+  background-color: aquamarine;
+}
+.noTasks h1 {
+  padding-bottom: 1rem;
+  color: var(--color-dark-gray);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.noTasks {
+  padding: 3rem 0;
+}

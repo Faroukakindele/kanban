@@ -1,0 +1,47 @@
+.container{
+padding: 1rem ;
+ margin: 2rem 0;
+ font-size: 1.2rem;
+display: flex;
+border-radius: 8px;
+flex-direction: column;
+align-items: flex-start;
+gap: 1rem;
+justify-content: center;
+background-color: var(--color-white);
+box-shadow: var(--color-light-gray) 0px 2px 8px 0px;
+position: relative;
+text-transform: capitalize;
+}
+.container h2{
+ color: var(--color-grey-dark);
+ font-size: 1.5rem;
+ font-weight: 600;
+
+}
+.container p {
+    color: var(--color-dark-gray);
+    font-size: 1.1rem;
+}
+.status{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    font-weight: 600;
+    padding:3px 20px ;
+    color: var(--color-black) !important;
+border-top-left-radius: 50rem;
+border-bottom-left-radius: 50rem;
+}
+ .todo {
+    background-color: var(--color-todo);
+}
+
+ .doing {
+    background-color: var(--color-doing);
+}
+
+.done {
+    background-color: var(--color-done);
+}

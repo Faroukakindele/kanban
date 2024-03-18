@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Inter:wght@300;500;700&family=Lora:wght@400;500;700&family=Manrope:wght@300;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  --color-primary: #635fc7;
+  --color-primary-light: #a8a4ff;
+  --color-primary-lighter: #a9a4ff2a;
+  --color-black-dark: #000112;
+  --color-black-light: #20212c;
+  --color-grey-dark: #2b2c37;
+  --color-grey-light: #3e3f4e;
+  --color-dark-gray: #828fa3;
+  --color-light-gray: #e4ebfa;
+  --color-white: #ffffff;
+  --color-white-dark: #f4f7fd;
+  --color-red: #ea5555;
+  --color-red-light: #ff9898;
+  --color-black: #000000a7;
+  --color-font: #828fa361;
+  --color-todo: rgb(127, 227, 255);
+
+  --color-doing: var(--color-primary);
+
+  --color-done: aquamarine;
+}
+body.dark{
+  --color-black-dark:#ffffff ;
+  --color-white :#2b2c37;
+  --color-light-gray :#828fa311;
+  --color-white-dark : #20212c;
+  --color-grey-dark : #ffffff;
+ 
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+input,textarea {
+  background-color: var(--color-white);
+  color: var(--color-black-dark);
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 70%;
+  }
+}

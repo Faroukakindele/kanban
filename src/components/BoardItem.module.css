@@ -1,0 +1,42 @@
+.container {
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  border-top-right-radius: 50rem;
+  border-bottom-right-radius: 50rem;
+}
+.active span svg{
+  fill: #fff !important;
+}
+.container span {
+  margin-right: 2rem;
+}
+.container span svg {
+  fill: var(--color-dark-gray) ;
+}
+.container:hover  svg{
+  fill: var(--color-primary);
+}
+.container:hover {
+  color: var(--color-primary);
+  background: #f4f7fd
+}
+
+
+.active ,.active:hover {
+  color: white;
+  background-color: var(--color-primary);
+}
+
+.active:hover span svg  {
+  fill: white;
+}
+
+@media screen and (max-width :1200px) {
+  .container{
+    padding: 1.3rem 2.5rem;
+
+  }
+  
+}

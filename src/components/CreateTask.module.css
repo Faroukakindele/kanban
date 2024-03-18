@@ -1,0 +1,88 @@
+.taskForm{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+.taskForm div  {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-dark-gray);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    gap: .5rem;
+   
+}
+.taskForm input ,.taskForm textarea {
+    outline: none;
+    border: 1.4px solid var(--color-dark-gray);
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    resize: none;
+}
+.taskForm textarea::-webkit-scrollbar {
+    appearance: none;
+}
+.taskForm input::placeholder , .taskForm textarea::placeholder {
+    color: var(--color-font);
+    font-weight:500;
+}
+.subtasksItems{
+    display: flex !important;
+    flex-direction: row !important
+    
+    ;
+  
+    align-items: center;
+    margin: .5rem 0 !important;
+    
+}
+.subtasksItems span{
+    flex-basis: 0 0 10%;
+    font-size: 2.8rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.subtasksItems input {
+    flex: 1;
+    
+    
+}
+.taskForm h2:first-child{
+    text-align: start;
+    letter-spacing: .5px;
+    margin: .5rem 0;
+    color: var(--color-black-dark);
+}
+.subtasks h2{
+color: var(--color-dark-gray) !important;
+font-size: 1.2rem;
+margin: 0 !important;
+}
+.subtasks p {
+    text-align: center;
+    font-weight: 500;
+    
+}
+.taskForm ul {
+    position: initial !important;
+    
+}
+.taskForm ul li {
+    font-weight: 400 !important;
+}
+.errorContainer{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+}
+.nameError{
+    color: var(--color-red) !important;
+}
+.errorContainer ~ input {
+    border-color: var(--color-red)
+}
