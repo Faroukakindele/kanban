@@ -10,11 +10,11 @@ import EditTask from "./components/EditTask";
 
 import CreateBoard from "./components/CreateBoard";
 import EditBoard from "./components/EditBoard";
-import { useEffect } from "react";
+
  //  Custom Style for the "Add column Btn"
 
 function App() {
-  const {data : {isSubTaskShown , deleteInitiator,  createNewTaskInitiator , createNewBoardInitiator, onEditTask ,onEditBoard} ,data} = useBoards()
+  const {data : {isSubTaskShown , deleteInitiator,  createNewTaskInitiator , createNewBoardInitiator, onEditTask ,onEditBoard} } = useBoards()
 
   
   return (
