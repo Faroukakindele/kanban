@@ -220,7 +220,7 @@ function TaskProvider({ children }) {
     function () {
       getBoards(data.currentID);
     },
-    [data.currentID]
+    [data]
   );
 
   useEffect(
