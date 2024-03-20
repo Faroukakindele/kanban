@@ -18,7 +18,7 @@ function App() {
 
   
   return (
-   <div>
+   <div >
       { isSubTaskShown &&<ShowSubTask/>}
       {
          deleteInitiator && <Delete/>

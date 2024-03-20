@@ -2,6 +2,15 @@
   display: grid;
   grid-template-columns: 2fr 8fr;
   grid-template-rows: .7fr 9fr;
-  height: calc(100vh);
+  height: calc(100vh );
   position: relative;
+ 
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+    padding:0 1.5rem;
+  }
+ 
+  
 }

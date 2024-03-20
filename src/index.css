@@ -30,10 +30,9 @@ body {
   --color-black: #000000a7;
   --color-font: #828fa361;
   --color-todo: rgb(127, 227, 255);
-
   --color-doing: var(--color-primary);
-
   --color-done: aquamarine;
+ 
 }
 body.dark{
   --color-black-dark:#ffffff ;
@@ -50,14 +49,10 @@ input,textarea {
   background-color: var(--color-white);
   color: var(--color-black-dark);
 }
-@media screen and (max-width: 600px) {
-  html {
-    font-size: 55%;
-  }
-}
+
 @media screen and (min-width: 800px) {
   html {
-    font-size: 60%;
+    font-size: 62.5%;
   }
 }
 @media screen and (min-width: 1000px) {

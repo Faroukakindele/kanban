@@ -25,7 +25,7 @@ function PlatformNav() {
       <Logo />
       {sideBarOpen && !isMobileTrue && <IsMobile />}
       {isMobileTrue  && isMobileOpen  && (
-        <Overlay style={overlayStyle}>
+        <Overlay style={overlayStyle} closeShowBtn={true}>
           <IsMobile isMobileTrue={isMobileTrue} />
         </Overlay>
       )}
@@ -36,7 +36,7 @@ function PlatformNav() {
 export default PlatformNav;
 function IsMobile({ isMobileTrue }) {
   return (
-    <div className={styles.boards}>
+    <div className={styles.boards} >
       <Boards />
       <DarkModeToggle />
 
