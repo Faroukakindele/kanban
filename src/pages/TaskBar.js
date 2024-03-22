@@ -28,7 +28,7 @@ function TaskBar() {
       style={BtnStyle}
      className={ data.task.columns?.length && styles.buttonEnabled}
      >
-     {isMobile ? "+" : "+ Add new Column"}
+     {isMobile ? "+" : "+ Add new Task"}
    
       </button>
 

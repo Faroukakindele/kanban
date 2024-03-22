@@ -10,6 +10,8 @@ function Dropdown({ type, editAction, top, right }) {
     right: `${right || 1}% `,
   };
   return (
+    <>
+   {showDropDown&& <div className={styles.overlay} onClick={()=>setShowDropDown(false)}></div>}
     <div className={styles.container} onClick={() => setShowDropDown(!showDropDown)}>
       <img src="icon-vertical-ellipsis.svg" alt="ellipse"></img>
       {showDropDown && (
@@ -36,6 +38,8 @@ function Dropdown({ type, editAction, top, right }) {
         </div>
       )}
     </div>
+    </>
+
   );
 }
 

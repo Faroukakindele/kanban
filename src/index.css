@@ -10,7 +10,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size:62.5%;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -50,11 +50,7 @@ input,textarea {
   color: var(--color-black-dark);
 }
 
-@media screen and (min-width: 800px) {
-  html {
-    font-size: 62.5%;
-  }
-}
+
 @media screen and (min-width: 1000px) {
   html {
     font-size: 70%;
