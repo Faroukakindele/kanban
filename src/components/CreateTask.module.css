@@ -3,6 +3,10 @@
     text-align: center;
     flex-direction: column;
     text-transform: capitalize;
+    overflow: scroll;
+}
+.taskForm::-webkit-scrollbar {
+    display: none;
 }
 .taskForm div  {
     text-align: start;
