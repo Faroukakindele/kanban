@@ -2,12 +2,10 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    text-transform: capitalize;
-    overflow: scroll;
+    text-transform: capitalize ;
+        transform: scale(.8)
 }
-.taskForm::-webkit-scrollbar {
-    display: none;
-}
+
 .taskForm div  {
     text-align: start;
     display: flex;
