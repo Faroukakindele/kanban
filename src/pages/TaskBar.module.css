@@ -8,7 +8,7 @@
   gap: 2rem;
   padding: 0 2rem;
   border: 1px solid var(--color-light-gray);
-  position: relative;
+  position: sticky;
 }
 .container h1 {
   margin-right: auto;
