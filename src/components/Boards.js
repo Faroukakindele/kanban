@@ -30,7 +30,7 @@ function Boards() {
           {" "}
           <img src="icon-board.svg" alt="board-icon" />
         </span>
-        + Create new Board
+        +&nbsp;Create&nbsp;new&nbsp;Board
       </h2>
     </div>
   );
